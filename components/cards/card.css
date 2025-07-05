@@ -1,0 +1,40 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  font-family: "Poppins";
+}
+.card {
+  box-sizing: border-box;
+  padding: 42px 30px;
+  background-color: #393e4680;
+  max-width: 360px;
+  min-height: 523px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.card__title {
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.card__description {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.trabajos {
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+}
