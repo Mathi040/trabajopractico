@@ -1,4 +1,5 @@
 .header {
+  box-sizing: border-box;
   background-color: #13171c;
   height: 114px;
   width: 100%;
@@ -7,6 +8,7 @@
   align-items: center;
   position: sticky;
   top: 0;
+  padding: 0 20px;
 }
 
 .header__logo {
@@ -33,7 +35,7 @@
 
 .indice__cerrar {
   position: absolute;
-  right: 4px;
+  right: 35px;
   top: 20px;
 }
 
@@ -43,10 +45,38 @@
   align-items: center;
 }
 
+.indice__links__desktop {
+  display: none;
+}
+
 .indice__link {
   text-decoration: none;
   color: white;
   font-family: "Poppins";
   font-size: 52px;
   display: inline;
+}
+
+.header__menu:hover,
+.indice__cerrar:hover {
+  cursor: pointer;
+}
+
+.indice__link:hover {
+  color: grey;
+}
+
+@media (min-width: 1000px) {
+  .header__menu {
+    display: none;
+  }
+  .indice__links__desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .indice__link {
+    font-size: 32px;
+  }
 }

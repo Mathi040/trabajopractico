@@ -13,6 +13,7 @@
   border-radius: 16px;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 .card__title {
   font-size: 33px;

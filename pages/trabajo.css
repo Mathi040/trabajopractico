@@ -1,0 +1,22 @@
+.presentacion {
+  padding-bottom: 150px;
+}
+
+.presentacion__trabajo-img {
+  width: 219px;
+  height: 211px;
+}
+
+.servicios__trabajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+@media (min-width: 1000px) {
+  .servicios__trabajos {
+    flex-direction: row;
+    gap: 150px;
+  }
+}

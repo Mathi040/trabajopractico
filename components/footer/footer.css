@@ -1,0 +1,60 @@
+.footer {
+  height: 650px;
+  background-color: #0f1113;
+  color: white;
+  font-family: "Poppins";
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 100px;
+}
+
+.footer__logo img {
+  width: 140px;
+  height: 102px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer__links a {
+  color: white;
+  text-decoration: none;
+}
+.link-pagina__logo {
+  width: 24px;
+  height: 24px;
+}
+.footer__redes {
+  display: flex;
+  gap: 40px;
+}
+.redes__logo {
+  width: 44px;
+  height: 44px;
+}
+
+.copy p {
+  color: #eeeeeebf;
+  font-size: 13px;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    height: 380px;
+  }
+  .footer__links {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
